@@ -1,3 +1,5 @@
+/* */
+/* DEFAULT STYLING */
 .square {
     position: absolute;
     left: 50%;
@@ -96,8 +98,14 @@ x {
     font-size: 15px;
     color: #b463e7;
     background-color: #f4f0f7;
+    border-radius: 3px;
+    padding: 3px;
 }
 
+
+
+/* */
+/* WINDOWED STYLING */
 @media screen and (max-width: 1200px) {
     .changelog {
         width: 80%;
@@ -111,6 +119,9 @@ x {
 }
 
 
+
+/* */
+/* MOBILE STYLING */
 @media only screen and (hover: none) and (pointer: coarse) {
 
     .changelog {
