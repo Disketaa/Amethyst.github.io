@@ -1,7 +1,3 @@
-    html {
-    zoom: 150%;
-}
-
 .square {
     position: absolute;
     left: 50%;
@@ -12,25 +8,25 @@
     align-items: center;
     margin: auto;
 
-    max-width: 100px;
-    max-height: 50px;
-    width: 5vw;
-    height: 2.75vw;
-    background-color: rgb(180, 99, 231);
+    width: 100px;
+    height: 50px;
+    background-color: #b463e7;
 
     font-family: 'Noto Sans';
-    font-size: min(max(1vw), 22px);
+    font-size: 20px;
     color: white;
     text-align: center;
 }
 
 .changelog {
-    margin-left: 15vw;
-    margin-right: 15vw;
+    position: absolute;
+    left: 50%;
+    width: 1000px;
+    transform: translate(-50%, -100px);
 }
 
 img {
-    max-width: 80%;
+    width: 1200px;
     height: auto;
     display: block;
     margin-left: auto; 
@@ -40,50 +36,130 @@ img {
 
 h1 {
     font-family: 'Noto Sans';
-    font-size: 250%;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
-    margin: 2vw;
-    padding-top: 2vw;
+    padding-top: 20px;
 }
 
 h2 {
     font-family: 'Noto Sans';
-    font-size: 0.66vw;
+    font-size: 20px;
     font-weight: bold;
     color: #9a97b9;
     text-align: center;
-    margin-top: -2.25vw;
-    padding-bottom: 1vw;
+    margin-top: -40px;
+    padding-bottom: 100px;
 }
 
 h3 {
     font-family: 'Noto Sans';
-    font-size: 1vw;
+    font-size: 30px;
     font-weight: bold;
-    margin-bottom: 0%;
+    margin-bottom: auto;
 }
 
 h4 {
     font-family: 'Noto Sans';
-    font-size: 0.66vw;
+    font-size: 20px;
     font-weight: bold;
     color: #9a97b9;
-    padding-left: 2%;
-    margin-top: 0.5%;
+    padding-left: 30px;
+    margin-top: auto;
 }
 
 ul {
-    font-family: 'Helvetica Neue Light', sans-serif;
-    font-size: 60%;
-    line-height: 150%;
-    margin-top: -0.5vw;
-    padding-left: 4%;
-    padding-bottom: 0.75vw;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    margin-top: -20px;
+    line-height: 20px;
+    padding-left: 35px;
+    padding-bottom: 30px;
+
+    list-style-type: "";
 }
 
-span {
-    font-family: 'Helvetica Neue Light', sans-serif;
-    font-size: 100%;
+ul li::before {
+  content: "\2022";
+  font-size: 15px;
+  color: #9a97b9;
+  display: inline-block;
+  width: 20px;
+}
+
+li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+x {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;
     color: #b463e7;
+    background-color: #f4f0f7;
+}
+
+@media screen and (max-width: 1200px) {
+    .changelog {
+        width: 80%;
+    }
+
+    img {
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+    }
+}
+
+
+@media only screen and (hover: none) and (pointer: coarse) {
+
+    .changelog {
+    position: relative;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -100px);
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 60px;
+        padding-top: 20px;
+    }
+
+    h2 {
+        font-size: 1.5vw;
+        margin-top: -50px;
+        padding-bottom: 15vw;
+    }
+
+    h3 {
+        font-size: 50px;
+    }
+
+    h4 {
+        font-size: 16px;
+        padding-left: 30px;
+
+    }
+
+    ul {
+        font-size: 14px;
+        line-height: 3vmin;
+        padding-left: 30px;
+
+    }
+
+    ul li::before {
+        font-size: 2vmax;
+        width: 1.5vmax;
+        height: 1vmax;
+    }
+
+    span {
+        font-size: 14px;
+    }
 }
