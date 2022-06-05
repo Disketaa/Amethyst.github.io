@@ -2,8 +2,8 @@
 /* DEFAULT STYLING */
 .square {
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: calc(50% - 100px / 2);
+    transform: translateY(-25px);
 
     display: flex;
     justify-content: center;
@@ -185,4 +185,60 @@ c {
     span {
         font-size: 14px;
     }
+}
+
+
+
+/* */
+/* ANIMATIONS */
+@keyframes fadeOut {
+  0% {
+    opacity: 25%;
+
+  }
+  100% {
+  }
+}
+
+@keyframes PosY {
+  0% {
+    transform: translateY(20px);
+
+  }
+  100% {
+  }
+}
+
+@keyframes SquareY {
+  0% {
+    transform: translateY(0px);
+
+  }
+  100% {
+    transform: translateY(-25);
+  }
+}
+
+img {  
+    animation: fadeOut 0.2s ease-out 0s 1, PosY 0.3s ease-in-out;
+}
+
+.square {
+    animation: SquareY 0.3s ease-in-out;
+}
+
+h1 {
+    animation: fadeOut 0.3s ease-out 0s 1, PosY 0.3s ease-in-out;
+}
+
+h2 {
+    animation: fadeOut 0.4s ease-out 0s 1, PosY 0.325s ease-in-out;
+}
+
+h3, h4 {
+    animation: fadeOut 0.5s ease-out 0s 1, PosY 0.350s ease-in-out;
+}
+
+ul, x {
+    animation: fadeOut 0.6s ease-out 0s 1, PosY 0.375s ease-in-out;
 }
