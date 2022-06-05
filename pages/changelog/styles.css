@@ -126,6 +126,7 @@ c {
     img {
         width: 100%;
         height: 60%;
+        margin-top: -70px;
         object-fit: cover;
     }
 }
@@ -146,6 +147,7 @@ c {
     img {
         width: 100%;
         height: auto;
+        margin-top: -70px;
     }
 
     h1 {
@@ -166,12 +168,13 @@ c {
     h4 {
         font-size: 16px;
         padding-left: 30px;
+        padding-bottom: 1vmax;
 
     }
 
     ul {
         font-size: 14px;
-        line-height: 1vmax;
+        line-height: 2vmax;
         padding-left: 30px;
 
     }
@@ -193,7 +196,7 @@ c {
 /* ANIMATIONS */
 @keyframes fadeOut {
   0% {
-    opacity: 25%;
+    opacity: 33%;
 
   }
   100% {
@@ -215,12 +218,12 @@ c {
 
   }
   100% {
-    transform: translateY(-25);
+    transform: translateY(-25px);
   }
 }
 
 img {  
-    animation: fadeOut 0.2s ease-out 0s 1, PosY 0.3s ease-in-out;
+    animation: PosY 0.3s ease-in-out;
 }
 
 .square {

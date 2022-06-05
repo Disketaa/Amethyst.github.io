@@ -1,5 +1,12 @@
-/* */
-/* ICONS */
+body {
+  margin: -10px;
+  overflow-x: hidden;
+}
+
+iframe {
+  margin: 0;
+  width: 100%;
+}
 
 /* */
 /* SCROLLBAR */

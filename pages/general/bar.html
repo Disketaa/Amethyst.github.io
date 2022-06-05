@@ -1,15 +1,95 @@
-<!--### BODY ###-->
-<ul>
-  <li><a href="default.asp">Home</a></li>
-  <li><a href="news.asp">News</a></li>
-  <li><a href="contact.asp">Contact</a></li>
-  <li><a href="about.asp">About</a></li>
-</ul>
+<!--### BAR ###-->
+<div class="bar">
+  <table>
+    <td>MAIN</td>
+    <td>CHANGES</td>
+    <td>ISSUES</td>
+  </table>
+</div>
+
 
 <style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* */
+/* DEFAULT STYLING */  
+
+.bar {
+    position: absolute;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    width: 100%;
+    height: 70px;
+    background-color: #f4f0f7;
+
+    font-family: 'Noto Sans';
+    font-size: 30px;
+    color: #9a97b9;
+    text-align: center;
+
+    animation: PosY 0.25s ease-in-out;
 }
-</style>>
+
+table {
+  table-layout: fixed;
+  width: 500px;
+  height: 70px;
+  text-align: center;
+}
+
+td {
+    font-family: 'Noto Sans';
+    font-size: 20px;
+    font-weight: bold;
+    color: #9a97b9;
+
+    transition: color 0.25s;
+}
+
+td:hover {
+    color: #b463e7;
+    transition: color 0.25s;
+}
+
+@keyframes PosY {
+  0% {
+    transform: translateY(25px);
+
+  }
+  100% {
+  }
+}
+
+
+
+/* */
+/* WINDOWED STYLING */
+@media screen and (max-width: 1200px) {
+  .bar {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  td {
+    font-size: 16px;
+  }
+}  
+
+
+
+/* */
+/* MOBILE STYLING */
+@media only screen and (hover: none) and (pointer: coarse) {
+  table {
+    width: 75%;
+  }
+
+  td {
+    font-size: 24px;
+  }
+}
+
+</style>
