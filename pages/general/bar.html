@@ -1,9 +1,10 @@
 <!--### BAR ###-->
 <div class="bar">
   <table>
-    <td>MAIN</td>
-    <td>CHANGES</td>
-    <td>ISSUES</td>
+    <base target="_parent">
+    <td><a href="https://disketaa.github.io/Amethyst.github.io">MAIN</a></td>
+    <td><a href="https://disketaa.github.io/Amethyst.github.io/pages/changelog/2.3dev9">CHANGES</a></td>
+    <td><a href="https://github.com/Disketaa/Amethyst/issues" target="_blank">ISSUES</a></td>
   </table>
 </div>
 
@@ -38,16 +39,17 @@ table {
   text-align: center;
 }
 
-td {
+a {
     font-family: 'Noto Sans';
     font-size: 20px;
     font-weight: bold;
     color: #9a97b9;
+    text-decoration:none;
 
     transition: color 0.25s;
 }
 
-td:hover {
+a:hover {
     color: #b463e7;
     transition: color 0.25s;
 }
