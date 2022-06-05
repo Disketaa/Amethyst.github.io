@@ -99,6 +99,18 @@ x {
     color: #b463e7;
     background-color: #f4f0f7;
     border-radius: 3px;
+    margin-left: -3px;
+    padding: 3px;
+}
+
+c {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #9a97b9;
+    background-color: #f4f0f7;
+    border-radius: 3px;
+    margin-left: -3px;
     padding: 3px;
 }
 
@@ -159,15 +171,15 @@ x {
 
     ul {
         font-size: 14px;
-        line-height: 3vmin;
+        line-height: 1vmax;
         padding-left: 30px;
 
     }
 
     ul li::before {
-        font-size: 2vmax;
-        width: 1.5vmax;
-        height: 1vmax;
+        font-size: 3vmin;
+        width: 30px;
+        height: 15px;
     }
 
     span {
