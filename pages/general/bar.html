@@ -2,7 +2,7 @@
 <div class="bar">
   <table>
     <base target="_parent">
-    <td><img src="https://disketaa.github.io/Amethyst.github.io/images/icon"></img></td>
+    <div class="logo"><img src="https://disketaa.github.io/Amethyst.github.io/images/icon.png"></img></div>
     <td><a href="https://disketaa.github.io/Amethyst.github.io">MAIN</a></td>
     <td><a href="https://disketaa.github.io/Amethyst.github.io/pages/changelog/2.3dev9">CHANGES</a></td>
     <td><a href="https://github.com/Disketaa/Amethyst/issues" target="_blank">ISSUES</a></td>
@@ -33,6 +33,19 @@
     animation: PosY 0.2s ease;
 }
 
+.logo {
+    margin-left: 30px;
+    transition: all 0.25s;
+
+    display: none;
+}
+
+.logo:hover {
+
+    filter: brightness(1.25) saturate(2.25);
+    transition: all 0.25s;
+}
+
 table {
   table-layout: fixed;
   width: 500px;
@@ -47,12 +60,13 @@ a {
     color: #9a97b9;
     text-decoration:none;
 
-    transition: color 0.25s;
+    transition: all 0.25s;
 }
 
 a:hover {
     color: #b463e7;
-    transition: color 0.25s;
+    margin-left: 4px;
+    transition: all 0.25s;
 }
 
 @keyframes PosY {
@@ -68,7 +82,7 @@ a:hover {
 
 /* */
 /* WINDOWED STYLING */
-@media screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .bar {
     position: relative;
 
@@ -85,7 +99,7 @@ a:hover {
 
 /* */
 /* MOBILE STYLING */
-@media only screen and (hover: none) and (pointer: coarse) {
+@media only screen and (hover: none) and (pointer: coarse) and (max-width: 1200px) {
   table {
     width: 75%;
   }
