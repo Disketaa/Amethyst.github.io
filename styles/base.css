@@ -28,18 +28,19 @@
 .text-block {
     position: absolute;
     left: 50%;
-    width: 1000px;
     transform: translate(-50%);
-    padding-top: 50px;
+
+    width: 1000px;
+    padding: 50px 0px 200px 0px;
     page-break-inside: avoid;
 }
 
 img {
+    display: block;
+    user-select: none;
     width: 1200px;
     height: auto;
-    display: block;
     margin: auto auto;
-    user-select: none;
 }
 
 h1 {
@@ -54,16 +55,17 @@ h2 {
     font-family: 'Noto Sans';
     font-size: 20px;
     font-weight: bold;
-    color: #9a97b9;
     text-align: center;
+    color: #9a97b9;
     margin: auto;
+    padding-bottom: 50px;
 }
 
 h3 {
     font-family: 'Noto Sans';
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
-    margin-bottom: auto;
+    margin: auto;
 }
 
 h4 {
@@ -71,16 +73,16 @@ h4 {
     font-size: 20px;
     font-weight: bold;
     color: #9a97b9;
-    padding-left: 30px;
-    margin-top: auto;
+    margin: auto;
+    padding-left: 25px;
 }
 
 ul {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 15px;
-    margin-top: -20px;
-    line-height: 20px;
-    padding-left: 50px;
+    line-height: 25px;
+    margin: auto;
+    padding-left: 45px;
     padding-bottom: 30px;
 }
 
@@ -88,9 +90,9 @@ x {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 15px;
     color: #b463e7;
-    background-color: #f4f0f7;
     border-radius: 3px;
-    margin-left: -3px;
+    background-color: #f4f0f7;
+    line-height: 25px;
     padding: 3px;
 }
 
@@ -99,64 +101,29 @@ c {
     font-size: 15px;
     font-weight: bold;
     color: #9a97b9;
-    background-color: #f4f0f7;
     border-radius: 3px;
+    background-color: #f4f0f7;
     margin-left: -3px;
     padding: 3px;
 }
-
 
 
 /* */
 /* MOBILE STYLING */
 @media only screen and (max-width: 1200px) {
 
-    .changelog {
-    position: relative;
-    left: 50%;
-    width: 90%;
-    transform: translate(-50%, -100px);
+    .square {
+    }
+
+    .text-block {
+        position: relative;
+        width: 80%;
     }
 
     img {
         width: 100%;
-        object-fit: cover;
-    }
-
-    h1 {
-        font-size: 60px;
-        padding-top: 20px;
-    }
-
-    h2 {
-        font-size: 1.5vw;
-        margin-top: -50px;
-        padding-bottom: 15vw;
-    }
-
-    h3 {
-        font-size: 50px;
-    }
-
-    h4 {
-        font-size: 2vw;
-        padding-left: 30px;
-        padding-bottom: 1vmax;
-
-    }
-
-    ul {
-        font-size: 1.5vw;
-        line-height: 2vmax;
-        padding-left: 30px;
-
-    }
-
-    x {
-        font-size: 1.5vw;
     }
 }
-
 
 
 /* */
