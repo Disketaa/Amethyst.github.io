@@ -62,7 +62,7 @@ h2 {
 
 h3 {
     font-family: 'Noto Sans';
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bold;
     margin: auto;
 }
@@ -127,9 +127,6 @@ a:hover {
 /* MOBILE STYLING */
 @media only screen and (max-width: 1200px) {
 
-    .square {
-    }
-
     .text-block {
         position: relative;
         width: 80%;
@@ -137,6 +134,18 @@ a:hover {
 
     img {
         width: 100%;
+    }
+
+    h2 {
+        font-size: 1vmin;
+    }
+
+    h4 {
+        padding-bottom: 20px;
+    }
+
+    li {
+        line-height: 50px;
     }
 }
 
