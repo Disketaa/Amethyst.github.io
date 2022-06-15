@@ -2,7 +2,6 @@
 @import "misc.css";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
 
-
 /* */
 /* DEFAULT STYLING */
 .square {
@@ -82,8 +81,14 @@ ul {
     font-size: 15px;
     line-height: 25px;
     margin: auto;
-    padding-left: 45px;
+    padding-left: 30px;
     padding-bottom: 30px;
+
+    list-style-position: inside;
+}
+
+::marker {
+    color: #9a97b9;
 }
 
 x {

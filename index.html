@@ -13,6 +13,32 @@
 </div>
 
 
+<!--### PRELOADER ###-->
+<div class="preloader"></div>
+<script>window.onload = function () {document.body.classList.add('loaded_hiding');window.setTimeout(function () {document.body.classList.add('loaded');document.body.classList.remove('loaded_hiding');}, 500);}</script>
+<style>
+	.preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: #f4f0f7;
+      z-index: 1001;
+    }
+
+    .loaded_hiding .preloader {
+      transition: 0.5s opacity;
+      opacity: 0;
+    }
+
+    .loaded .preloader {
+      display: none;
+    }
+</style>
+
+
 <!--### PAGE SETTINGS ###-->
+
 <title>Amethyst</title>
 <link href="styles/base.css" type="text/css" rel="stylesheet">

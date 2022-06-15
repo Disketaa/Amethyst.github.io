@@ -13,6 +13,17 @@ iframe {
   user-select: none;
 }
 
+
+/* */
+/* MOBILE STYLING */
+@media only screen and (max-width: 1200px) {
+
+    iframe {
+      height: 100px;
+    }
+}
+
+
 /* */
 /* SCROLLBAR */
 ::-webkit-scrollbar {
@@ -21,13 +32,4 @@ iframe {
 
 ::-webkit-scrollbar-thumb {
   background: #b463e7;
-}
-
-/* */
-/* MOBILE STYLING */
-@media only screen and (max-width: 1200px) {
-
-iframe {
-  height: 100px;
-}
 }
