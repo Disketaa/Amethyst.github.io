@@ -1,0 +1,36 @@
+/* */
+/* DEFAULT STYLING */
+body {
+  overflow-x: hidden;
+  margin: auto;
+}
+
+iframe {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  margin: auto;
+}
+
+
+/* */
+/* MOBILE STYLING */
+@media only screen and (max-width: 1200px) {
+    iframe {
+      width: 100%;
+      height: 150px;
+      margin-left: -50px;
+    }
+}
+
+
+
+/* */
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b463e7;
+}

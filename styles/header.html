@@ -4,39 +4,27 @@
     <base target="_parent">
     <td><a href="https://disketaa.github.io/Amethyst.github.io">MAIN</a></td>
     <td><a href="https://disketaa.github.io/Amethyst.github.io/pages/changes">CHANGES</a></td>
-    <td><a href="https://github.com/Disketaa/Amethyst/issues" target="_blank">ISSUES</a></td>
+    <td><a href="https://github.com/Disketaa/Amethyst/issues" target="_blank">ISSUES</a><img src="https://disketaa.github.io/Amethyst.github.io/images/icons/external_link.png"></td>
   </table>
 </div>
 
 
 <style>
 /* */
-/* DEFAULT STYLING */  
-
+/* DEFAULT STYLING */
 .bar {
-    position: absolute;
-
-    display: flex;
     justify-content: left;
     align-items: center;
-
-    width: 100%;
-    height: 70px;
     background-color: #f4f0f7;
-
-    font-family: 'Noto Sans';
-    font-size: 30px;
-    color: #9a97b9;
-    text-align: center;
 
     animation: PosY 0.2s ease;
 }
 
 table {
-  table-layout: fixed;
-  width: 500px;
-  height: 70px;
-  text-align: center;
+   table-layout: fixed;
+   text-align: center;
+   width: 500px;
+   height: 100px;
 }
 
 a {
@@ -45,6 +33,7 @@ a {
     font-weight: bold;
     color: #9a97b9;
     text-decoration:none;
+    padding: 5px;
 
     transition: all 0.25s;
 }
@@ -67,36 +56,15 @@ a:hover {
 
 
 /* */
-/* WINDOWED STYLING */
-@media only screen and (max-width: 1200px) {
-  .bar {
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-  }
-
-  td {
-    font-size: 16px;
-  }
-}  
-
-
-
-/* */
 /* MOBILE STYLING */
-@media only screen and (hover: none) and (pointer: coarse) and (max-width: 1200px) {
-  .bar {
-    position: fixed;
-    margin-top: 2px;
-  }
+@media only screen and (max-width: 1200px) {
 
   table {
     width: 100%;
   }
 
   a {
-    font-size: 34px;
+    font-size: 125%;
   }
 }
 

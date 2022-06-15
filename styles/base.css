@@ -1,4 +1,9 @@
 /* */
+@import "misc.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
+
+/* */
 /* DEFAULT STYLING */
 .square {
     position: absolute;
@@ -20,19 +25,20 @@
     text-align: center;
 }
 
-.changelog {
+.text-block {
     position: absolute;
     left: 50%;
     width: 1000px;
-    transform: translate(-50%, -100px);
+    transform: translate(-50%);
+    padding-top: 50px;
+    page-break-inside: avoid;
 }
 
 img {
     width: 1200px;
     height: auto;
     display: block;
-    margin-left: auto; 
-    margin-right: auto;
+    margin: auto auto;
     user-select: none;
 }
 
@@ -41,7 +47,7 @@ h1 {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    padding-top: 20px;
+    margin: auto;
 }
 
 h2 {
@@ -50,8 +56,7 @@ h2 {
     font-weight: bold;
     color: #9a97b9;
     text-align: center;
-    margin-top: -40px;
-    padding-bottom: 100px;
+    margin: auto;
 }
 
 h3 {
@@ -75,22 +80,8 @@ ul {
     font-size: 15px;
     margin-top: -20px;
     line-height: 20px;
-    padding-left: 35px;
+    padding-left: 50px;
     padding-bottom: 30px;
-
-    list-style-type: "";
-}
-
-ul li::before {
-  content: "\2022";
-  font-size: 15px;
-  color: #9a97b9;
-  display: inline-block;
-  width: 20px;
-}
-
-li:not(:last-child) {
-    margin-bottom: 10px;
 }
 
 x {
@@ -117,25 +108,8 @@ c {
 
 
 /* */
-/* WINDOWED STYLING */
-@media screen and (max-width: 1200px) {
-    .changelog {
-        width: 80%;
-    }
-
-    img {
-        width: 100%;
-        height: 60%;
-        margin-top: -70px;
-        object-fit: cover;
-    }
-}
-
-
-
-/* */
 /* MOBILE STYLING */
-@media only screen and (hover: none) and (pointer: coarse) and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 
     .changelog {
     position: relative;
@@ -146,8 +120,7 @@ c {
 
     img {
         width: 100%;
-        height: auto;
-        margin-top: -70px;
+        object-fit: cover;
     }
 
     h1 {
@@ -166,27 +139,21 @@ c {
     }
 
     h4 {
-        font-size: 16px;
+        font-size: 2vw;
         padding-left: 30px;
         padding-bottom: 1vmax;
 
     }
 
     ul {
-        font-size: 14px;
+        font-size: 1.5vw;
         line-height: 2vmax;
         padding-left: 30px;
 
     }
 
-    ul li::before {
-        font-size: 3vmin;
-        width: 30px;
-        height: 15px;
-    }
-
-    span {
-        font-size: 14px;
+    x {
+        font-size: 1.5vw;
     }
 }
 
