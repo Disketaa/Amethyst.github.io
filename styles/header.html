@@ -1,10 +1,16 @@
 <!--### BODY ###-->
-<div class="bar">
+<div class= "bar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Ic_settings_48px.svg/2048px-Ic_settings_48px.svg.png"></p>    
+</div>
+
+<div class= "head">
   <table>
     <base target="_parent">
     <td><a href="https://disketaa.github.io/Amethyst.github.io">MAIN</a></td>
     <td><a href="https://disketaa.github.io/Amethyst.github.io/pages/changes/changes">CHANGES</a></td>
-    <td><a href="https://github.com/Disketaa/Amethyst/issues" target="_blank">ISSUES<sup span style="font-size: 12px">🡕</a></td>
+    <td><a href="https://github.com/Disketaa/Amethyst/issues" target="_blank">ISSUES</a></td>
+
+    <div class="button-get"><a href="https://www.curseforge.com/minecraft/modpacks/amethyst" target="_blank">GET MODPACK</a></div>
   </table>
 </div>
 
@@ -14,12 +20,51 @@
 /* DEFAULT STYLING */
 .bar {
     display: flex;
+    justify-content: right;
+    align-items: center;
+
+    padding-right: 60px;
+
+    height: 25;
+    background: black;
+}
+
+.head {
+    display: flex;
 
     justify-content: left;
     align-items: center;
-    background-color: #f4f0f7;
+    background-color: #171615;
+}
 
-    animation: PosY 0.2s ease;
+.button-get {
+    position: absolute;
+    right: 58;
+    display: flex;
+
+    box-shadow: inset 0px 5px #6bc349, inset 0px 0px 0px 5px #2a631c;
+
+    justify-content: center;
+    align-items: center;
+    background: #3b8526;
+
+    width: 225px;
+    height: 60px;
+
+    transition: all 0.25s;
+}
+
+.button-get:hover {
+    box-shadow: inset 0px 0px #dea9ff, inset 0px 0px 0px 0px #5f20b4;
+
+    background: #b463e7;
+    transition: all 0.25s;
+}
+
+img {
+    width: 15px;
+
+    filter: invert(50%);
 }
 
 table {
@@ -31,21 +76,19 @@ table {
 
 a {
     font-family: 'Noto Sans';
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
-    color: #9a97b9;
+    color: #f4f0f7;
     text-decoration:none;
-    padding: 5px;
+    padding: 25px;
 
     transition: all 0.25s;
 }
 
 a:hover {
-    color: #b463e7;
-    margin-left: 4px;
+    font-size: 18px;
     transition: all 0.25s;
 }
-
 
 
 /* */
@@ -61,10 +104,6 @@ a:hover {
 
     td {
         width: 300px;
-    }
-
-    a {
-        font-size: 40px;
     }
 
 </style>
