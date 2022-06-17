@@ -5,7 +5,7 @@
     <td><a href="https://disketaa.github.io/Amethyst.github.io">MAIN</a></td>
     <td><a href="https://disketaa.github.io/Amethyst.github.io/pages/changes/changes">CHANGES</a></td>
     <td><a href="https://github.com/Disketaa/Amethyst/issues" target="_blank">ISSUES</a></td>
-    <div class="button-list">LIST</div>
+    <div class="button-list"><object data="happy.svg" width="300" height="300"> </object></div>
   </table>
 </div>
 <a href="https://www.curseforge.com/minecraft/modpacks/amethyst" target="_blank"><div class="button-modpack">GET MODPACK</div></a>
@@ -45,11 +45,11 @@
     justify-content: center;
     align-items: center;
 
-    box-shadow: inset 0px 5px #6bc349, inset 0px 0px 0px 5px #2a631c;
     font-family: 'Noto Sans';
     font-size: 20px;
     font-weight: bold;
     color: #f4f0f7;
+    box-shadow: inset 0px 5px #6bc349, inset 0px 0px 0px 5px #2a631c;
 
     background: #3b8526;
     width: 225px;
@@ -103,20 +103,24 @@ a:hover {
     }
 
     .button-list {
+        user-select: none;
         position: absolute;
+        left: 40px;
+
         display: flex;
         justify-content: center;
         align-items: center;
-        left: 25px;
-
-        color: white;
-        font-weight: bold;
+        
         font-family: 'Noto Sans';
+        font-weight: bold;
         font-size: 16px;
-        width: 100px;
-        height: 100px;
-        background: #3b8526;
-        display: flex;
+        color: white;
+        1box-shadow: inset 0px 5px #6bc349, inset 0px 0px 0px 5px #2a631c;
+        clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+
+        background-color: #3b8526;
+        width: 60px;
+        height: 65px;      
     }
 
     table, td, .button-modpack {
